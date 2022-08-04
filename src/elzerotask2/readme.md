@@ -6,7 +6,7 @@
 
 <!-- Type Question 2 Answer Below -->
 
-"it will be in quirks mode and take the behavior for old browsers"
+"it will be in quirks mode and take the behavior for old browsers""
 
 <!-- Type Question 3 Answer Below -->
 
