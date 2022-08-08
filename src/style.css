@@ -23,3 +23,12 @@ span {
   /* display: block; */
   display: inline-block;
 }
+
+/* box model values  */
+.container {
+  width: 1000px;
+}
+
+.inside-container {
+  width: 50%; /*500px*/
+}
