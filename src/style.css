@@ -7,3 +7,19 @@ th, td {
   padding: 15px;
   background-color: #bbefedb4;
 }
+
+/* The Box Model */
+div {
+  background: red;
+  height: 50px;
+  width: 300px;
+  /* display: inline;/ */
+  display: inline-block;
+}
+
+span {
+  background: lightblue; height: 50px;
+  width: 300px;
+  /* display: block; */
+  display: inline-block;
+}
