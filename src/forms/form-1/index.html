@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- task link :https://elzero.org/html-assignments-lesson-from-24-to-27/  -->
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="test.py" method="get" target="_blank">
+      <fieldset>
+        <legend>Add Username:</legend>
+        <label for="username">Username</label><br />
+        <input
+          id="username"
+          type="text"
+          name="username"
+          placeholder="username"
+          aria-required="”true”"
+        />
+        <hr />
+
+        <legend>Add Password:</legend>
+        <label for="password">Password</label> <br />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+        <hr />
+
+        <legend>Add Phone Number:</legend>
+        <label for="phone">Phone Number</label> <br />
+        <input
+          type="tel"
+          id="phone"
+          name="number"
+          placeholder="+20100 (234) 123"
+        />
+        <hr />
+
+        <legend>Add Email:</legend>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="you@example.com"
+          aria-required="”true”"
+        />
+        <hr />
+        <legend>Choose :</legend>
+        <label for="cars">Choose a car:</label><br />
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <hr />
+        <input type="hidden" id="custId" name="custId" value="3487" />
+        <hr />
+
+        <button type="button">Send Data!</button>
+        <hr />
+        <input id="aria-required=”true”>" type="reset" value=" Empty Form" />
+      </fieldset>
+    </form>
+  </body>
+</html>
