@@ -7,3 +7,60 @@ th, td {
   padding: 15px;
   background-color: #bbefedb4;
 }
+
+/* The Box Model */
+div {
+  background: red;
+  height: 50px;
+  width: 300px;
+  /* display: inline;/ */
+  display: inline-block;
+}
+
+/* span {
+  background: lightblue; height: 50px;
+  width: 300px; */
+  /* display: block; */
+  /* display: inline-block;
+}  */
+
+/* box model values  */
+/* .container {
+  width: 1000px;
+} */
+
+.inside-container {
+  width: 50%; /*500px*/
+}
+
+
+/* padding  */
+
+/* p {
+  background: lightgreen;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+span {
+  background: yellow;
+  border: 1px solid black;
+  margin: 20px;
+   padding: 20px;
+   display: inline-block;
+} */
+
+/* mar4gin collapsing  */
+.first {
+  margin-bottom: 0;
+}
+.second {
+  margin-top: 0;
+}
+
+section {
+  background: lightblue;
+  width: 500px;
+  margin: 0 auto;
+}
