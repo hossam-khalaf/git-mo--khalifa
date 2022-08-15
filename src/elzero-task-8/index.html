@@ -7,6 +7,7 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- register  -->
     <h1>Register</h1>
     <form action="../elzero-task-8/index.html">
       <label for="username">Username</label>
@@ -15,14 +16,25 @@
         placeholder="Enter Username"
         name="uname"
         required
-        autofocus="autofocus"
+        autofocus="autofocus" 
+        pattern="[0-9a-fA-F]{4,8}"
+       title="Username accepted from 5 to 20 characters only"
+      
       />
-      <hr />
+      <br />
       <label for="email">Email</label>
       <input type="text" id="email" value=" o@o.com" readonly />
+      <br />
+      <label for="token">Token</label>
+      <input
+        type="hidden"
+        id="token"
+        name="token"
+        value=" b92f1fc2fce391ad7af633723afd3055"
+      />
       <hr />
-
-      <h2>skills</h2>
+      <!-- skills  -->
+      <h3>skills</h3>
       <input
         type="checkbox"
         id="Problem Solving"
@@ -30,15 +42,16 @@
         value="Problem Solving"
       />
       <label for="Problem Solving"> Problem Solving</label>
-      <hr />
+      <br />
       <input
         type="checkbox"
         id="Logical Thinking"
         name="Logical Thinking"
         value="Logical Thinking"
+        checked
       />
       <label for="Logical Thinking"> Logical Thinking</label>
-      <hr />
+      <br />
       <input
         type="checkbox"
         id="Advanced Search"
@@ -46,29 +59,15 @@
         value="Advanced Search"
       />
       <label for="Advanced Search"> Advanced Search</label>
-      <hr />
+      <br />
       <input type="checkbox" id="Analysis" name="Analysis" value="Analysis" />
       <label for="Analysis">Analysis</label>
-      <hr />
+      <br />
       <input type="checkbox" id="Planning" name="Planning" value="Planning" />
       <label for="Planning"> Planning</label>
-      <hr />
-      <label for="Job">Job:</label>
-      <select id="Job">
-        <option value="Front-End Developer">Front-End Developer</option>
-        <option value="Back-End Developer">Back-End Developer</option>
+      <br />
 
-        <option value="Business Analyst">Business Analyst</option>
-        <option value="Project Manager">Project Manager</option>
-        <option value="Scrum Master">Scrum Master</option>
-      </select>
-
-      <hr />
-      <input type="submit" value="submit" />
-      <hr />
-      <input type="reset" value="Empty" />
-
-      <!-- <hr />
+      <!-- JOBS  -->
       <h3>Job</h3>
       <input
         type="radio"
@@ -79,7 +78,7 @@
       />
       <label for="Front-End Developer"> Front-End Developer</label>
 
-      <hr />
+      <br />
       <input
         type="radio"
         id="Back-End Developer"
@@ -88,7 +87,7 @@
       />
       <label for="Back-End Developer"> Back-End Developer</label>
 
-      <hr />
+      <br />
       <input
         type="radio"
         id="Business Analyst"
@@ -97,7 +96,7 @@
       />
       <label for="Business Analyst"> Business Analyst</label>
 
-      <hr />
+      <br />
       <input
         type="radio"
         id="Project Manager"
@@ -106,7 +105,7 @@
       />
       <label for="Project Manager"> Project Manager</label>
 
-      <hr />
+      <br />
       <input
         type="radio"
         id="Scrum Master"
@@ -117,19 +116,33 @@
 
       <hr />
 
-      <label for="token">Token</label>
-      <input
-        type="hidden"
-        id="token"
-        name="token"
-        value=" b92f1fc2fce391ad7af633723afd3055"
-      /> -->
+      <!-- Programming Languages  -->
+      <label for="Book">Choose Book:</label>
+      <select id="Job">
+        <optgroup label="PHP">
+          <option value="V5.0">V5.0</option>
+          <option value="V5.0">V7.0</option>
+          <option value="V5.0">V8.0</option>
+        </optgroup>
 
-      <!-- <label for="tel">Phone</label>
-      <input type="tel" name="tel" id="tel" /> -->
+        <optgroup label="Python">
+          <option value="V5.0">V2.0</option>
+          <option value="V5.0">V3.0</option>
+          <option value="V5.0">V3.9</option>
+        </optgroup>
 
-      <!-- <label for="password">Password</label>
-      <input type="password" name="password" id="passsword" /> -->
+        <optgroup label="Java">
+          <option value="V5.0">V3.2</option>
+          <option value="V5.0">V4.1</option>
+          <option value="V5.0">V2.3</option>
+        </optgroup>
+      </select>
+      <hr>
+      <textarea name="Review" id="Review" cols="30" rows="10">Write Here Why You Want To Learn Programming</textarea>
+      <hr />
+      <input type="submit" value="submit" />
+      <hr />
+      <input type="reset" value="Empty" />
     </form>
   </body>
 </html>
